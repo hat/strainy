@@ -1,9 +1,11 @@
+#!/usr/bin/python3
+
 import rumps
 import time
 from datetime import datetime, timedelta
 import _thread
 
-rumps.debug_mode(True)  # turn on command line logging information for development - default is off
+rumps.debug_mode(False)  # turn on command line logging information for development - default is off
 
 class StrainElf:
     def __init__(self):
@@ -43,7 +45,7 @@ class StrainElf:
 
 
     def run(self):
-        _thread.start_new_thread(self.check_time)
+        _thread.start_new_thread(self.check_time, ())
         self.app.run()
 
 
