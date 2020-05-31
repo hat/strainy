@@ -19,6 +19,7 @@ class StrainElf:
 
     def set_next_break(self):
         self.next_break = datetime.strftime(datetime.now()  + timedelta(minutes=self.interval_minutes), '%d %B %Y %I:%M%p')
+        self.menu[1].title = f"Next break @ {self.next_break.split()[-1]}"
 
 
     def reset_timer(self):
