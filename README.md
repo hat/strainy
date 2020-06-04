@@ -38,6 +38,8 @@ When you have taken the break, click the icon, then the button that says `Back f
 
 [] Change to custom icons
 
+[] Start in dock hidden
+
 
 ## Resources
 
