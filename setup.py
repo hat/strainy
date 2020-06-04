@@ -7,9 +7,9 @@ Usage:
 
 from setuptools import setup
 
-APP = ['main.py']
-DATA_FILES = ['normal_eye.ico', 'redeye.ico']
-OPTIONS = {'iconfile': 'normal_eye.ico', 'packages': 'rumps,time,datetime,_thread'}
+APP = ['strainy.py']
+DATA_FILES = ['./normal_eye.ico', './redeye.ico',]
+OPTIONS = {}
 
 setup(
     app=APP,
